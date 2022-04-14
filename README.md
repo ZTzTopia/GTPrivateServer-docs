@@ -10,7 +10,7 @@
 - `fz|` - Game file size.
 - `lmode|` - Login mode. 0 login normally. Get from OnSendToServer, 1 login with auto enter to world offers/world, 2 same like 1 maybe?
 - `cbits|` - Client bits. if age under `12` the client bits will add `16`.  `2` is check_no_friend_add, `4` is check_hide_signs, `8` is check_hide_iap, `16` is check_hide_tapjoy, `32` is check_broadcasts, `64` is check_no_guild_add, `128` is check_no_guild_flag, `256` is disable_billboard, `512` is use_store_classic. Saved to `save.dat` as `"Client"`.
-- `GDPR|` - This after accepted terms, eula, etc and maybe from OnOverrideGDPRServer. `1` if your age below `12`, `2` if the country en_US, en_us, US and USA, `3` if not from en_US, en_us, US and USA.
+- `GDPR|` - This after accepted terms, eula, etc and maybe from OnOverrideGDPRServer. `1` if your age over `12`, `2` if the country en_US, en_us, US and USA, `3` if not from en_US, en_us, US and USA.
 - `category|` - I dont know what is this.
 - `gid|` - Ubisoft account id, android only.
 - `hash2|` - Mac hash.
