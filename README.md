@@ -43,9 +43,9 @@ Text:
   - `country|` - Country.
   - `hash|` - Device id hash.
   - `mac|` - Mac.
-  - `user|` - Get from OnSendToServer. Userid increment from 0.
-  - `token|` - Get from OnSendToServer. Maybe token increment from 0?
-  - `UUIDToken|` - Get from OnSendToServer. maybe uuid with base16 encode uppercase?
+  - `user|` - Get from OnSendToServer.
+  - `token|` - Get from OnSendToServer.
+  - `UUIDToken|` - Get from OnSendToServer.
   - `wk|` - Cryptography info from registry `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography` and `Computer\HKEY_CURRENT_USER\Software\Microsoft\29549`. `NONE0` if not found `Cryptography\MachineGuid`, `NONE1` if not found `29549\*`, `NONE2` if not found ??. Android always return `NONE0`
   - `zf|` - Maybe the binary data hash? windows only.
   - `aid|` - Advertising id.
@@ -60,7 +60,7 @@ From: ENet server, Message type: 4, Game update packet type: 1, Type: Variant
 Variant:
   - `0` - OnSendToServer
   - `1` - Port of the enet server.
-  - `2` - Token.
-  - `3` - User.
-  - `4` - `IP|doorID|UUIDToken`, the first is the ip of the enet server and the second is the doorID and the third is the UUIDToken
+  - `2` - Token. Random number and max by userid?
+  - `3` - User. Userid increment from 0.
+  - `4` - `IP|doorID|UUIDToken`, the first is the ip of the enet server and the second is the doorID and the third is the UUIDToken. Maybe uuid with base16 encode uppercase?
   - `5` - lmode/Login mode.
