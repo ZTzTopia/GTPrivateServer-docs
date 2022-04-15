@@ -16,7 +16,7 @@
 - `hash2|` - Mac hash.
 - `meta|` - From server_data.php.
 - `fhash|` - Hash of all login info without value (e.g. `meta|`) exclude `zf|`, `UUIDToken|`, `tr|`.
-- `rid|` - Generate random, maybe length from `30-34` and saved to `save.dat` as `"rid"`.
+- `rid|` - Generate random one time if no `"rid"` in `save.dat`, maybe length from `30-34` and saved to `save.dat` as `"rid"`.
 - `platformID|` - The platfrom id, 0 if windows.
 - `deviceVersion|` - OS version.
 - `country|` - Country.
