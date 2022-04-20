@@ -52,7 +52,7 @@ Text:
   - `tr|` - Cant support trees, `0` if detected root apk else `4322` android only.
   - `vid|` - Not used.
   - `ProductId` - Not used. Note: this without `|`
-  - `doorID|` - Maybe doorID from OnSendToServer?
+  - `doorID|` - Get from OnSendToServer.
 
 ## OnSendToServer
 From: ENet server, Message type: 4, Game update packet type: 1, Type: Variant
@@ -62,5 +62,5 @@ Variant:
   - `1` - Port of the enet server.
   - `2` - Token. Random number and max by userid?
   - `3` - User. Userid increment from 0.
-  - `4` - `IP|doorID|UUIDToken`, the first is the ip of the enet server and the second is the doorID and the third is the UUIDToken. Maybe uuid with base16 encode uppercase?
+  - `4` - `IP|doorID|UUIDToken`, the first is the ip of the enet server and the second is the doorID and the third is the UUIDToken. The UUIDToken random algorithm same as RID.
   - `5` - lmode/Login mode.
