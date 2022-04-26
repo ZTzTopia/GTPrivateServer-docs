@@ -1,5 +1,24 @@
 # GTPrivateServer-docs
 
+- [HTTP](https://github.com/ZTzTopia/GTPrivateServer-docs#server_dataphp)
+- Message type 2
+  - [Login info](https://github.com/ZTzTopia/GTPrivateServer-docs#login-info)
+- Message type 4
+  - Packet type 1
+    - [OnSendToServer](https://github.com/ZTzTopia/GTPrivateServer-docs#onsendtoserver)
+    - [OnOverrideGDPRFromServer](https://github.com/ZTzTopia/GTPrivateServer-docs#onoverridegdprfromserver)
+    - [OnSetRoleSkinsAndTitles](https://github.com/ZTzTopia/GTPrivateServer-docs#onsetroleskinsandtitles)
+    - [OnSuperMainStartAcceptLogonHrdxs47254722215a](https://github.com/ZTzTopia/GTPrivateServer-docs#onsupermainstartacceptlogonhrdxs47254722215a)
+    - [OnConsoleMessage](https://github.com/ZTzTopia/GTPrivateServer-docs#onconsolemessage)
+    - [SetHasAccountSecured](https://github.com/ZTzTopia/GTPrivateServer-docs#sethasaccountsecured)
+    - [OnTodaysDate](https://github.com/ZTzTopia/GTPrivateServer-docs#ontodaysdate)
+    - [SetShowChatOnlyFromFriends](https://github.com/ZTzTopia/GTPrivateServer-docs#setshowchatonlyfromfriends)
+    - [OnSetClothing](https://github.com/ZTzTopia/GTPrivateServer-docs#onsetclothing)
+    - [OnCountryState](https://github.com/ZTzTopia/GTPrivateServer-docs#oncountrystate)
+    - [OnSetPos](https://github.com/ZTzTopia/GTPrivateServer-docs#onsetpos)
+    - [OnSetCurrentWeather](https://github.com/ZTzTopia/GTPrivateServer-docs#onsetcurrentweather)
+    - [OnSetFreezeState](https://github.com/ZTzTopia/GTPrivateServer-docs#onsetfreezestate)
+
 ## server_data.php
 From: HTTP server, Type: HTTP
 
@@ -153,7 +172,7 @@ Variant:
   - `0` - OnSetPos
   - `1` - Pos, `x, y`
 
-## OnSetPos
+## OnSetCurrentWeather
 From: ENet server, Message type: 4, Game update packet type: 1, Type: Variant
   
 Variant:
@@ -164,12 +183,5 @@ Variant:
 From: ENet server, Message type: 4, Game update packet type: 1, Type: Variant
   
 Variant:
-  - `0` - OnSetCurrentWeather
-  - `1` - 0 or 1.
-
-## OnSetFreezeState
-From: ENet server, Message type: 4, Game update packet type: 1, Type: Variant
-  
-Variant:
-  - `0` - OnSetCurrentWeather
+  - `0` - OnSetFreezeState
   - `1` - 0 or 1.
