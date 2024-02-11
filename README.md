@@ -1,23 +1,24 @@
 # GTPrivateServer-docs
 
-- [HTTP](https://github.com/ZTzTopia/GTPrivateServer-docs#server_dataphp)
+- [HTTP](#server_dataphp)
 - Message type 2
-  - [Login info](https://github.com/ZTzTopia/GTPrivateServer-docs#login-info)
+  - [Login info](#login-info)
 - Message type 4
   - Packet type 1
-    - [OnSendToServer](https://github.com/ZTzTopia/GTPrivateServer-docs#onsendtoserver)
-    - [OnOverrideGDPRFromServer](https://github.com/ZTzTopia/GTPrivateServer-docs#onoverridegdprfromserver)
-    - [OnSetRoleSkinsAndTitles](https://github.com/ZTzTopia/GTPrivateServer-docs#onsetroleskinsandtitles)
-    - [OnSuperMainStartAcceptLogonHrdxs47254722215a](https://github.com/ZTzTopia/GTPrivateServer-docs#onsupermainstartacceptlogonhrdxs47254722215a)
-    - [OnConsoleMessage](https://github.com/ZTzTopia/GTPrivateServer-docs#onconsolemessage)
-    - [SetHasAccountSecured](https://github.com/ZTzTopia/GTPrivateServer-docs#sethasaccountsecured)
-    - [OnTodaysDate](https://github.com/ZTzTopia/GTPrivateServer-docs#ontodaysdate)
-    - [SetShowChatOnlyFromFriends](https://github.com/ZTzTopia/GTPrivateServer-docs#setshowchatonlyfromfriends)
-    - [OnSetClothing](https://github.com/ZTzTopia/GTPrivateServer-docs#onsetclothing)
-    - [OnCountryState](https://github.com/ZTzTopia/GTPrivateServer-docs#oncountrystate)
-    - [OnSetPos](https://github.com/ZTzTopia/GTPrivateServer-docs#onsetpos)
-    - [OnSetCurrentWeather](https://github.com/ZTzTopia/GTPrivateServer-docs#onsetcurrentweather)
-    - [OnSetFreezeState](https://github.com/ZTzTopia/GTPrivateServer-docs#onsetfreezestate)
+    - [OnSendToServer](#onsendtoserver)
+    - [OnOverrideGDPRFromServer](#onoverridegdprfromserver)
+    - [OnSetRoleSkinsAndTitles](#onsetroleskinsandtitles)
+    - [OnSuperMainStartAcceptLogonHrdxs47254722215a](#onsupermainstartacceptlogonhrdxs47254722215a)
+    - [OnConsoleMessage](#onconsolemessage)
+    - [SetHasAccountSecured](#sethasaccountsecured)
+    - [OnTodaysDate](#ontodaysdate)
+    - [SetShowChatOnlyFromFriends](#setshowchatonlyfromfriends)
+    - [OnSetClothing](#onsetclothing)
+    - [OnCountryState](#oncountrystate)
+    - [OnSetPos](#onsetpos)
+    - [OnSetCurrentWeather](#onsetcurrentweather)
+    - [OnSetFreezeState](#onsetfreezestate)
+    - [OnRemove](#onremove)
 
 ## server_data.php
 From: HTTP server, Type: HTTP
@@ -185,3 +186,10 @@ From: ENet server, Message type: 4, Game update packet type: 1, Type: Variant
 Variant:
   - `0` - OnSetFreezeState
   - `1` - 0 or 1.
+
+## OnRemove
+From: ENet server, Message type: 4, Game update packet type: 1, Type: Variant
+  
+Variant:
+  - `0` - OnRemove
+  - `1` - `netID|number`
