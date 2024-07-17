@@ -19,6 +19,7 @@
 - [OnDialogRequest](#ondialogrequest)
 - [OnNameChanged](#onnamechanged)
 - [OnTalkBubble](#ontalkbubble)
+- [OnAction](#onaction)
 
 ## OnSendToServer
 
@@ -32,6 +33,7 @@ Variant:
 - `3` | `SIGNED` - User. Userid increment from 0.
 - `4` | `STRING` - `IP|doorID|UUIDToken`, the first is the ip of the enet server and the second is the doorID and the third is the UUIDToken. The UUIDToken random algorithm same as RID.
 - `5` | `SIGNED` - lmode/Login mode.
+- `6` | `STRING` - `Yourname` Player name (session new login)
 
 ## OnOverrideGDPRFromServer
 
@@ -179,6 +181,7 @@ Variant:
 
 - `0` | `STRING` - OnRemove
 - `1` | `STRING` - `netID|number`
+- `2` | `STRING` - `pId|playerId` (auto increment player id)
 
 ## OnSpawn
 

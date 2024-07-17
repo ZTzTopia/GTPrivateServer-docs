@@ -10,6 +10,9 @@ Body:
 
 - `server|` - The enet server ip.
 - `port|` - The enet server port.
+- `loginurl|` - The new login url `login.growtopiagame.com`.
+- `error|1000|MessageOutdatedClient` - When using outdated client, this appear.
+- `url|` - Same as error above, this is for Download Page.
 - `type|` - Unknown.
 - `maint|` - Maintenance message.
 - `beta_server|` - The beta enet server ip.

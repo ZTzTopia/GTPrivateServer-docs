@@ -14,6 +14,7 @@ Text:
 - `tankIDPass|` - GrowID pass.
 - `f|` - Swear Filter.
 - `protocol|` - Protocol.
+- `ltoken|` - Base64 string that contain login data.
 - `game_version|` - The game version.
 - `fz|` - Game file size.
 - `lmode|` - Login mode. 0 login normally, 1 same like mode 0 but without logging on message, 2 login with auto enter to world offers/world, also get from OnSendToServer
